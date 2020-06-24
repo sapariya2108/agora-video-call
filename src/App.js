@@ -1,25 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
-
+import VideoBroadCasting from './agora/videoBroadCasting';
+import HostPage from './agora/host';
+import Audiance from './agora/audiance'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/host" render={() => <HostPage />}></Route>
+        <Route path="/speaker" render={() => <VideoBroadCasting />}></Route>
+        <Route path="/audiance" render={() => <Audiance></Audiance>}></Route>
+      </Switch>
+    </Router>
   );
 }
 

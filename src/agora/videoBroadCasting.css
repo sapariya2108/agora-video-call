@@ -1,0 +1,122 @@
+div{
+  /* border: .3px solid black; */
+  margin: 4px;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  max-width: 400px;
+  width: 100%;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.create-session-block{
+  display: flex;
+  justify-content: center;
+}
+.join-session-block{
+  display: flex;
+  align-items: center;
+}
+.video-container-block-raw{
+  display: flex;
+  align-items: space-between;
+}
+.video-container-block-column{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+.video-user-block{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.video-item-block{
+  width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 1;
+}
+.screen-share-block{
+  width: 30%;
+  height: 30%;            
+  position: absolute;
+  top: 100px;
+  left: -3px;
+  z-index: 0;
+}
+.disable-video-screen{
+  width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  z-index: 3;
+}
+.disable-audio-screen{
+    width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  z-index: 2;
+}
+.local-user-controlbar{
+  display: flex;
+}
+
+
+
+
+.live-stream-display{
+  width: 990px;
+  height:540px;
+  background-color: black;
+  position: relative;
+}
+.live-stream-user{
+  position: absolute;
+}
+.remote-stream-button{
+  width: 100%;
+  position: absolute;
+  top:207px;
+  display:flex;
+}
+
+button{
+  padding: 10px;
+  margin: 1px;
+}
+.banner{
+  width: 100%;
+    height: 36px;
+    position: absolute;
+    top: 475px;
+    background-color: red;
+    color: white;
+    z-index: 10;
+    left: -4px;
+    font-size: 28px;
+    text-align: center;
+}
