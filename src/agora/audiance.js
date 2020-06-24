@@ -15,14 +15,6 @@ class Audiance extends Component {
     }
     initFirebase = () => {
         const firebaseConfig = {
-            apiKey: "AIzaSyAUkd0Xonsa35Zyak-gLmFprdzaBTgqG1Y",
-            authDomain: "testing-492b5.firebaseapp.com",
-            databaseURL: "https://testing-492b5.firebaseio.com",
-            projectId: "testing-492b5",
-            storageBucket: "testing-492b5.appspot.com",
-            messagingSenderId: "1009985259266",
-            appId: "1:1009985259266:web:b088577d133c1fd65e641b",
-            measurementId: "G-2NDR1YVH5V"
         };
 
         // Initialize Firebase
@@ -50,7 +42,7 @@ class Audiance extends Component {
             })
         })
     }
-    
+
     render() {
         return (
             <div className="main-container">

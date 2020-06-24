@@ -4,8 +4,8 @@ import './videoBroadCasting.css';
 import * as firebase from "firebase/app";
 import "firebase/database";
 
-const APP_ID = "7c5860eca1cf4e14907d773462f3bada";
-const TOKEN = "0067c5860eca1cf4e14907d773462f3badaIADhfGLor0szAzCc64VUa+q6izecD79hVvnWRbRgt8BtPPGGbHoAAAAAEADoGr0ICne5XgEAAQAJd7le";
+const APP_ID = "";
+const TOKEN = "";
 
 class HostPage extends Component {
     state = {
@@ -346,7 +346,7 @@ class HostPage extends Component {
             screenConfig.uid = this.state.currentScreenShare.getId()
             if (this.state.layout) {
                 screenConfig.width = 1580
-                screenConfig.height = 680   
+                screenConfig.height = 680
             }
             transcodingUser.push(screenConfig)
         }
